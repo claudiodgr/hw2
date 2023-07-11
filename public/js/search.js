@@ -32,9 +32,13 @@ function addToggle(event) {
 
     }
 
-    axios.post(`/playlist`, {
-        playlistId: event.target.dataset.id
-    }).then(responseHandler).then(textHandler);
+    if (event.target.classList.contains('added')) {
+        axios.delete(`/playlist?playlistId=${event.target.dataset.id}`).then(responseHandler).then(textHandler);
+    } else {
+        axios.post(`/playlist`, {
+            playlistId: event.target.dataset.id
+        }).then(responseHandler).then(textHandler);
+    }
 }
 
 function submitHandler(event) {
