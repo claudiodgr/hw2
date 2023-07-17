@@ -56,9 +56,9 @@
 
 hr {
     border: none; /* remove the default border */
-    height: 2px; /* set the height of the line */
-    background: linear-gradient(to right, #2196F3, #E91E63); /* create a gradient color */
-    box-shadow: 0 4px 8px rgba(0,0,0,0.1); /* add some shadow for a 3D effect */
+    height: 2px;
+    background: linear-gradient(to right, #2196F3, #E91E63);
+    box-shadow: 0 4px 8px rgba(0,0,0,0.1);
     width: calc(100% + 40px); /* set the width of the line to be 20px more than the container */
     margin-left: -20px; /* adjust the position of the line to be centered */
     margin-top: 0.8rem;
@@ -72,7 +72,6 @@ hr {
     color: #ccc;
     cursor: pointer;
     user-select: none;
-    -webkit-tap-highlight-color: transparent;
     transition: transform 0.2s;
 }
 
@@ -101,7 +100,6 @@ hr {
     border-radius: 20px;
     font-size: 14px;
     max-width: 80px;
-    /* Set a maximum width for the chatbox */
     white-space: nowrap;
     /* Prevent text wrapping */
     overflow: hidden;

@@ -26,12 +26,6 @@
     background: #0b7dda;
 }
 
-.search-form::after {
-    content: "";
-    clear: both;
-    display: table;
-}
-
 .search-form {
     width: 90vw;
     max-width: 650px;
@@ -90,7 +84,6 @@
     color: #baf73c;
     cursor: pointer;
     user-select: none;
-    -webkit-tap-highlight-color: transparent;
     transition: transform 0.2s, color 0.2s;
 }
 

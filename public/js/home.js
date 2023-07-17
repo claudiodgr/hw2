@@ -62,7 +62,7 @@ function responseHandler(resp) {
     return Promise.resolve(resp.data)
 }
 
-function checkOverflowAndAddTooltip() {
+/* function checkOverflowAndAddTooltip() {
     const chatboxes = document.querySelectorAll('.chatbox');
 
     chatboxes.forEach((chatbox) => {
@@ -72,7 +72,7 @@ function checkOverflowAndAddTooltip() {
             chatbox.setAttribute('title', chatbox.textContent);
         }
     });
-}
+}*/
 
 axios.get('/homelist').then(responseHandler).then(jsonHandler);
 var hamburgerMenu = document.querySelector('.hamburger-menu');
@@ -97,4 +97,4 @@ hearts.forEach((heart) => {
     });
 });
 
-checkOverflowAndAddTooltip();
+// checkOverflowAndAddTooltip();

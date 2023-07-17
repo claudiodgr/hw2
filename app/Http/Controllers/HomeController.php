@@ -8,7 +8,7 @@ class HomeController extends Controller
 {
     public function index()
     {
-        // Get playlists from current user and liked playlists from other users
+        // Get playlists from current user
         $playlists = auth()->user()->playlists()->with('user')->get()->map(function ($playlist) {
             $playlist->like = false;
             return $playlist;
